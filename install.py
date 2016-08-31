@@ -21,7 +21,7 @@ class Install(Module):
             shutil.move(os.path.join(src,f), dst)
 
     def launch(self):
-        self._move("/tmp/cct/cct-jboss-common/dynamic-resources", "/usr/local/dynamic-resources")
+        self._move("/tmp/cct/jboss-common/dynamic-resources", "/usr/local/dynamic-resources")
 
     def s2i(self):
-        self._move("/tmp/cct/cct-jboss-common/s2i", "/usr/local/s2i")
+        self._move("/tmp/cct/jboss-common/s2i", "/usr/local/s2i")
